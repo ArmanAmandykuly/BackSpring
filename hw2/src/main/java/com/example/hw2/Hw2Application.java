@@ -32,7 +32,7 @@ public class Hw2Application {
 	public CommandLineRunner run(RestTemplate restTemplate) throws Exception {
 		return args -> {
 			Quote quote = restTemplate.getForObject(
-					"http://localhost:1234/api/random", Quote.class
+					"http://localhost:1236/api/random", Quote.class
 			);
 			log.info(quote.toString());
 		};

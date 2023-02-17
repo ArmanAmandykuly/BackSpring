@@ -3,6 +3,7 @@ package com.example.hw3.controller;
 import com.example.hw3.domain.model.tutorial.Tutorial;
 import com.example.hw3.repository.TutorialRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -11,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-@CrossOrigin(origins = "http://localhost:1234")
+@CrossOrigin(origins = "http://localhost:1238")
 @RestController
 @RequestMapping("/api")
 public class TutorialController {
